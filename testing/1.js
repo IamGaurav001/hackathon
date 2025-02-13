@@ -112,14 +112,9 @@ export async function postInlineComment(owner, repo, prNumber, filePath, line, c
         const headers = {
             Authorization: `token ${GITHUB_TOKEN}`,
             Accept: "application/vnd.github.v3+json"
-        };
 
-        const response = await axios.post(url, payload, { headers });
-
-        console.log("✅ Inline Comment Posted Successfully!", response.data);
         return response.data;
     } catch (error) {
         console.error("❌ Error Posting Inline Comment:", error.response?.data || error.message);
     }
 }
-New
