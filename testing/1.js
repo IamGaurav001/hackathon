@@ -110,8 +110,7 @@ export async function postInlineComment(owner, repo, prNumber, filePath, line, c
         };
 
         const headers = {
-            Authorization: `token ${GITHUB_TOKEN}`,
-            Accept: "application/vnd.github.v3+json"
+
 
     } catch (error) {
         console.error("❌ Error Posting Inline Comment:", error.response?.data || error.message);
