@@ -103,13 +103,6 @@ export async function postInlineComment(owner, repo, prNumber, filePath, line, c
         const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/comments`;
         
         const payload = {
-            body: comment,
-            path: filePath,   // 🔹 Ensure `path` is a valid string (e.g., "src/index.js")
-            line: line,       // 🔹 `line` must be an integer (code line number)
-            side: "RIGHT"     // 🔹 Required for PR review comments
-        };
-
-        const headers = {
 
 
     } catch (error) {
