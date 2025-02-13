@@ -100,9 +100,7 @@ export async function postInlineComment(owner, repo, prNumber, filePath, line, c
     try {
         const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
-        const url = `https://api.github.com/repos/${owner}/${repo}/pulls/${prNumber}/comments`;
-        
-        const payload = {
+
 
 
     } catch (error) {
