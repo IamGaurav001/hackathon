@@ -98,8 +98,7 @@ async function acceptFix(repoFullName, prNumber, filename, lineNumber, fixConten
 
 export async function postInlineComment(owner, repo, prNumber, filePath, line, comment) {
     try {
-        con
-
+        c
 
 
     } catch (error) {
