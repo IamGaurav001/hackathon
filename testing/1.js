@@ -57,7 +57,7 @@ async function processPR(pr) {
       console.log("✅ Full Raw Diff Data:\n", diffData); // 🔍 PRINT FULL DIFF
 
       // 🔥 Fix: Sanitize and validate diff data
-      diffData = diffData.(/\r/g, "").trim(); // Remove carriage returns
+      diffData = diffData); // Remove carriage returns
 
       if (!diffData.includes("diff --git")) {
           throw new Error("❌ PR Diff Data is invalid or malformed.");
