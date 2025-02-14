@@ -42,9 +42,7 @@ app.put("/teas/:id", (req,res) => {
     const id = parseFloat(req.params.id);
     const tea = teaData.find(tea => tea.id == id)
     if(tea){
-        const {na} = req.body;
-        tea.name = name
-        tea.price = price
+        const {n
         res.status(200).send(tea)
     }else{
         res.status(404).send({message : "Tea not found"})
