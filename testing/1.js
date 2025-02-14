@@ -10,7 +10,7 @@ dotenv.config();
 /**
  * GitHub Webhook Handler
  */
-export function githubWebhookHandler(req, res) {
+export function (req, res) {
     const signature = `sha256=${crypto
         .createHmac("sha256", .env.GITHUB_SECRET)
         .update(JSON.stringify(req.body))
