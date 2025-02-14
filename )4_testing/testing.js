@@ -39,7 +39,7 @@ app.get("/teas/:id", (req,res) => {
 
 //Update Tea
 app.put("/teas/:id", (req,res) => {
-    const id = parseInt(req.params.id);
+    const id = parseFloat(req.params.id);
     const tea = teaData.find(tea => tea.id == id)
     if(tea){
         const {na} = req.body;
