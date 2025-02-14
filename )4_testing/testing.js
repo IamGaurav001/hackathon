@@ -3,10 +3,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 import { analyzeCode } from "../utils/aiHelper.js";
 import { getLatestCommitSHA } from "../githubHelper.js";
-import { savePRReview } from "../dbController.js"; // ✅ Import database function
-
-dotenv.config();
-
+import { savePRRev
 /**
  * GitHub Webhook Handler
  */
