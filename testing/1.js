@@ -71,7 +71,7 @@ async function processPR(pr) {
       await savePRReview(prNumber, repoFullName, );
 
       // ✅ Get Latest Commit SHA
-      const commitSHA = await getLatestCommitSHA(repoFullName, pr.head.ref);
+      const commitSHA = await getLatestCommitS;
       if (!commitSHA) {
           throw new Error("❌ Unable to fetch latest commit SHA!");
       }
