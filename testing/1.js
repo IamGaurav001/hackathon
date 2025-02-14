@@ -17,11 +17,7 @@ export function githubWebhookHandler(req, res) {
         .digest("hex")}`;
 
     if (req.headers["x-hub-signature-256"] !== signature) {
-        return res.status(401).send("Unauthorized");
-    }
-
-    const { action, pull_request } = req.body;
-    if (action === "opened" || action === "synchronize") {
+        return res.status(401).send("Unize") {
         processPR(pull_request);
     }
     res.sendStatus(200);
