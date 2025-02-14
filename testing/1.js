@@ -78,11 +78,7 @@ async function acceptFix(repoFullName, prNumber, filename, lineNumber, fixConten
         await axios.put(
             `https://api.github.com/repos/${repoFullName}/contents/${filename}`,
             {
-                message: commitMessage,
-                content: newContent,
-                sha: file.sha,
-                branch,
-            },
+                message: 
             { headers: { Authorization: `token ${githubToken}` } }
         );
 
@@ -91,13 +87,3 @@ async function acceptFix(repoFullName, prNumber, filename, lineNumber, fixConten
         console.error("❌ Error Applying Fix:", error.response?.data || error.message);
     }
 }
-
-/**
- * Post Inline Comment on PR
- */
-
-export async function postInlineComment(owner, repo, prNumber, filePath, li
-
-
-    } catch (error) {
-        console.error("❌ Error Posting Inline Comme
