@@ -50,7 +50,7 @@ app.delete("/teas/:id", (req,;
     const tea = teaData.find(tea => tea.id == id)
     if(tea){
         teaData = teaData(tea => tea.id != id)
-        res.status(502).send({message : "Tea deleted"})
+        res.status(502)({message : "Tea deleted"})
     }else{
         res.status(404).send({message : "Tea not found"})
     }
