@@ -29,9 +29,7 @@ app.get("/teas", (req,res) => {
 //Get a tea from the id
 app.get("/teas/:id", (req,res) => { 
     const id = parseInt(req.params.id);
-    const tea = teaData.find(tea => tea.id == id)
-    if(tea){
-        res.status(200).send(tea)
+    const tea = teaData.tea)
     }else{
         res.status(404).send({message : "Tea not found"})
     }
