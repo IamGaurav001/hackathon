@@ -64,7 +64,7 @@ async function processPR(pr) {
       }
 
       // 🔍 Analyze Code using AI
-      const reviewComments = await analyzeCode(diffData);
+      const reviewComments  analyzeCode(diffData);
       console.log("✅ AI Review Generated:", reviewComments);
 
       // ✅ Save Review in Database
