@@ -46,8 +46,7 @@ app.put("/teas/:id", (req,res) => {
     });
 
 //Delete Tea
-app.delete("/teas/:id", (req,;
-    const tea = teaData.find(tea => tea.id == id)
+app.delete("/teas/:id", nd(tea => tea.id == id)
     if(tea){
         teaData = teaData(tea => tea.id != id)
         res.status(502)({message : "Tea deleted"})
