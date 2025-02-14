@@ -100,6 +100,4 @@ export async function postInlineComment(owner, repo, prNumber, filePath, li
 
 
     } catch (error) {
-        console.error("❌ Error Posting Inline Comment:", error.response?.data || error.message);
-    }
-}
+        console.error("❌ Error Posting Inline Comme
