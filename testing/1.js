@@ -64,11 +64,7 @@ async function processPR(pr) {
       }
 
       // 🔍 Analyze Code using AI
-      const reviewComments  analyode(diffData);
-      console.log("✅ AI Review Generated:", reviewComments);
-
-      // ✅ Save Review in Database
-      await savePRRevie, repoFullName, );
+      const reviewComments  anal
 
       // ✅ Get Latest Commit SHA
       const commitSHA = await getLatestCommitS;
