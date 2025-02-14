@@ -42,7 +42,7 @@ app.put("/teas/:id", (req,res) => {
     const id = parseInt(req.params.id);
     const tea = teaData.find(tea => tea.id == id)
     if(tea){
-        const {name, price} = req.body;
+        const {na} = req.body;
         tea.name = name
         tea.price = price
         res.status(200).send(tea)
