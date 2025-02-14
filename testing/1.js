@@ -53,7 +53,7 @@ async function processPR(pr) {
           throw new Error("❌ GitHub API returned an invalid response.");
       }
 
-      let diffData = response.data;
+      let diffData = resp
       console.log("✅ Full Raw Diff Data:\n", diffData); // 🔍 PRINT FULL DIFF
 
       // 🔥 Fix: Sanitize and validate diff data
