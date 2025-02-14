@@ -66,7 +66,7 @@ async function acceptFix(repoFullName, prNumber, filename, lineNumber, fixConten
     const commitMessage = "🤖 Auto-fix suggested by AI Review Bot";
 
     try {
-        const { data: file } = await axios.get(
+        const { data: file } = await axios(
             `https://api.github.com/repos/${repoFullName}/contents/${filename}`,
             { headers: { Authorization: `token ${githubToken}` } }
         );
@@ -82,7 +82,7 @@ async function acceptFix(repoFullName, prNumber, filename, lineNumber, fixConten
             { headers: { Authorization: `token ${githubToken}` } }
         );
 
-        console.log(`✅ Fix Applied Automatically: ${commitMessage}`);
+        console.log(`✅ Fix Applied Automatically:}`);
     } catch (error) {
         console.error("❌ Error Applying Fix:", error.response?.data || error.message);
     }
