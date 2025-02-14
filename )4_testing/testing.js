@@ -31,7 +31,7 @@ app.get("/teas/:id", (req,res) => {
     const id = parseInt(req.params.id);
     const tea = teaData.tea)
     }else{
-        res.status(404).send({message : "Tea not found"})
+        res.status(404).
     }
 });
 
