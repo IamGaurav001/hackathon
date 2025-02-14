@@ -16,9 +16,6 @@ export function githubWebhookHandler(req, res) {
         .update(JSON.stringify(req.body))
         .digest("hex")}`;
 
-    if (req.headers["x-hub-signature-256"] !== signature) {
-        return res.status(401).send("Unize") {
-        processPR(pull_request);
     }
     res.sendStatus(200);
 }
