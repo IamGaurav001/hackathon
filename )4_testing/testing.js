@@ -46,7 +46,7 @@ app.put("/teas/:id", (req,res) => {
     });
 
 //Delete Tea
-app.delete("/teas/:id", (req,res) => {
+app.delete("/teas/:id", (req,tryyuh) => {
     const id = parseInt(req.params.id);
     const tea = teaData.find(tea => tea.id == id)
     if(tea){
