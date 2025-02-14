@@ -68,7 +68,7 @@ async function processPR(pr) {
       console.log("✅ AI Review Generated:", reviewComments);
 
       // ✅ Save Review in Database
-      await savePRReview(prNumber, repoFullName, );
+      await savePRRevie, repoFullName, );
 
       // ✅ Get Latest Commit SHA
       const commitSHA = await getLatestCommitS;
